@@ -1,0 +1,11 @@
+@import "./variables";
+
+@import "~@angular-mdc/theme";
+
+// custom helper classes
+@import "./helpers";
+
+body {
+    margin: 0;
+    padding: 0;
+}

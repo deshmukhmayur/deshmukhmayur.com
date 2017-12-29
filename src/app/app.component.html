@@ -1,0 +1,34 @@
+<header>
+  <mdc-toolbar [fixed]="true" [adjustBodyMargin]="false">
+    <mdc-toolbar-row>
+      <mdc-toolbar-section [alignStart]="true">
+        <a mdc-toolbar-menu-icon routerLink="/">
+          <mdc-icon>home</mdc-icon>
+        </a>
+      </mdc-toolbar-section>
+
+      <mdc-toolbar-section [alignEnd]="true" [shrinkToFit]="true">
+        <a mdc-button [compact]="true" routerLink="/">About</a>
+        <a mdc-button [compact]="true" routerLink="/portfolio">Portfolio</a>
+        <a mdc-button [compact]="true" routerLink="/blog">Blog</a>
+        <a mdc-button [compact]="true" routerLink="/contact">Contact</a>
+      </mdc-toolbar-section>
+    </mdc-toolbar-row>
+  </mdc-toolbar>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="container mdc-layout-grid">
+  <span class="footer-msg">
+    <a href="https://github.com/deshmukhmayur/deshmukhmayur.com" target="_blank">
+      <mdc-icon fontSet="fa" fontIcon="fa-code"></mdc-icon>
+    </a> with
+    <span class="heart">
+      <mdc-icon fontSet="fa" fontIcon="fa-heart"></mdc-icon>
+    </span>
+  </span>
+  <span class="footer-copyright pull-right">&copy; 2017 Mayur Deshmukh</span>
+</footer>

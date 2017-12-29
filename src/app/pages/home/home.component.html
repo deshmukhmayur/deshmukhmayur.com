@@ -1,0 +1,99 @@
+<section id="welcome" class="container mdc-layout-grid align-center">
+  <div class="mdc-layout-grid__inner">
+    <div class="profile-img
+      mdc-layout-grid__cell
+      mdc-layout-grid__cell--span-3-desktop
+      mdc-layout-grid__cell--span-8-tablet
+      mdc-layout-grid__cell--align-middle
+      mdc-layout-grid__cell--order-2">
+      <mdc-icon [fontSize]="96">person</mdc-icon>
+    </div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9-desktop mdc-layout-grid__cell--span-8-tablet">
+      <h2 class="mdc-typography--display4">Hello, World!</h2>
+      <p class="mdc-typography--headline">I am
+        <strong>Mayur Deshmukh</strong>
+      </p>
+      <span class="mdc-typography--subheading2">I'm a User Experience Designer and Web Developer</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="container mdc-layout-grid">
+  <h3 class="mdc-typography--display1 align-center">About Me?</h3>
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell
+      mdc-layout-grid__cell--span-4-desktop
+      mdc-layout-grid__cell--span-12-tablet
+      mdc-layout-grid__cell--align-middle
+      mdc-layout-grid">
+      <p class="mdc-typography--body1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum minima ipsa vero, hic sit optio reiciendis quia amet eaque
+        pariatur, nobis id sint dolorum maxime impedit libero. Similique, eum aliquam.
+      </p>
+      <button mdc-button [raised]="true">
+        <mdc-icon>file_download</mdc-icon>Resume</button>
+    </div>
+    <div class="mdc-layout-grid__cell
+      mdc-layout-grid__cell--span-4
+      mdc-layout-grid__cell--align-middle
+      mdc-layout-grid">
+      <mdc-list-group>
+        <div class="separator"></div>
+        <mdc-list-group-subheader class="mdc-typography--headline">Education</mdc-list-group-subheader>
+        <mdc-list [interactive]="false" [dense]="true" [lines]="2">
+          <mdc-list-item>
+            <mdc-list-item-text>
+              B.E. (Computer Science and Engineering)
+              <mdc-list-item-secondary>DIEMS, Aurangabad (2014-2018)</mdc-list-item-secondary>
+            </mdc-list-item-text>
+          </mdc-list-item>
+          <mdc-list-item>
+            <mdc-list-item-text>
+              High School
+              <mdc-list-item-secondary>Deogiri College, Aurangabad (2012-2014)</mdc-list-item-secondary>
+            </mdc-list-item-text>
+          </mdc-list-item>
+        </mdc-list>
+        <div class="separator"></div>
+        <mdc-list-group-subheader class="mdc-typography--headline">Work Experience</mdc-list-group-subheader>
+        <mdc-list [dense]="true" [interactive]="false" [lines]="2">
+          <mdc-list-item>
+            <mdc-list-item-text>
+              Acadview
+              <mdc-list-item-secondary>Django Developer &mdash; 2017</mdc-list-item-secondary>
+            </mdc-list-item-text>
+          </mdc-list-item>
+        </mdc-list>
+      </mdc-list-group>
+    </div>
+    <div class="mdc-layout-grid__cell
+      mdc-layout-grid__cell--span-4
+      mdc-layout-grid__cell--align-middle
+      mdc-layout-grid">
+      <mdc-list-group>
+        <div class="separator"></div>
+        <mdc-list-group-subheader class="mdc-typography--headline">Skills</mdc-list-group-subheader>
+        <mdc-list [dense]="true" [interactive]="false">
+          <mdc-list-item class="mdc-typography--subheading1">
+            UI &amp; UX Design
+          </mdc-list-item>
+          <mdc-list-item>
+            <mdc-linear-progress [secondary]="true"></mdc-linear-progress>
+          </mdc-list-item>
+          <mdc-list-item class="mdc-typography--subheading1">
+            Front-end Web Design
+          </mdc-list-item>
+          <mdc-list-item>
+            <mdc-linear-progress [secondary]="true"></mdc-linear-progress>
+          </mdc-list-item>
+          <mdc-list-item class="mdc-typography--subheading1">
+            Back-end Web Development
+          </mdc-list-item>
+          <mdc-list-item>
+            <mdc-linear-progress [secondary]="true"></mdc-linear-progress>
+          </mdc-list-item>
+        </mdc-list>
+      </mdc-list-group>
+    </div>
+  </div>
+</section>
