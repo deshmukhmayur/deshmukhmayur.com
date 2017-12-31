@@ -26,9 +26,12 @@ footer {
     text-transform: uppercase;
 }
 .footer-msg > a {
-    color: initial;
+    color: #757575;
     text-decoration: none;
 }
-.footer-msg > .heart {
+.footer-msg > a > mdc-icon:first-child {
+    color: initial;
+}
+.footer-msg mdc-icon[fontIcon="fa-heart"] {
     color: #e25555;
 }

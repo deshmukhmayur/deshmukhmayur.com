@@ -1,0 +1,11 @@
+.not-found-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 1rem;
+    left: 0;
+    background-image: url('/assets/404.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position: cover;
+}
