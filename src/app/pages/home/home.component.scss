@@ -4,6 +4,9 @@
     }
 }
 
-#welcome {
-    margin-top: -56px !important;
+@media screen and (max-width: 479px) {
+    #welcome .greeting {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
 }

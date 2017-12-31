@@ -18,13 +18,29 @@ import { HomeComponent } from './pages/home/home.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { UnderConstructionComponent } from './pages/under-construction/under-construction.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'blog', component: BlogComponent }
+  {
+    path: 'portfolio', component: UnderConstructionComponent,
+    data: { title: 'My Portfolio' }
+  },
+  {
+    path: 'contact', component: ContactComponent,
+    data: { title: 'Contact' }
+  },
+  {
+    path: 'blog',
+    component: UnderConstructionComponent,
+    data: { title: 'My Blog' }
+  },
+  {
+    path: '**', component: NotFoundComponent,
+    data: { title: 'Not Found' }
+  }
 ];
 
 @NgModule({
@@ -33,7 +49,9 @@ const appRoutes: Routes = [
     HomeComponent,
     PortfolioComponent,
     ContactComponent,
-    BlogComponent
+    BlogComponent,
+    UnderConstructionComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
