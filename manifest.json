@@ -1,0 +1,24 @@
+{
+    "short_name": "Mayur Deshmukh",
+    "name": "Mayur Deshmukh",
+    "description": "Personal Portfolio Website",
+    "author": "Mayur Deshmukh",
+    "icons": [
+      {
+        "src": "favicon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/?launcher=true",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#1565c0",
+
+    "developer": {
+        "name": "Mayur Deshmukh",
+        "url":  "https://github.com/deshmukhmayur"
+    }
+  }
+  
