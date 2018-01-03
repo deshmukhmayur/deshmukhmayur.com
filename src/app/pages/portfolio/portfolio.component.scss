@@ -1,0 +1,45 @@
+section#portfolio > h3:first-child {
+    margin-top: 0;
+}
+
+.projects-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+.project-item {
+    margin-bottom: 1.4rem;
+}
+// .project-item:not(:last-child) {
+//     padding-bottom: 1rem;
+//     // border-bottom: 1px solid #eee;
+// }
+
+.project-item-media img {
+    box-shadow: 8px 12px 20px 0 rgba(46,61,73,.15);
+    border-radius: 3px;
+    transition: all .3s ease;
+
+    &:hover {
+        box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .project-item:nth-child(even) > .project-item-media {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 839px) {    
+    .project-item:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+    .project-item-title {
+        margin-top: 0;
+    }
+}
+
+.tags {
+    margin-bottom: 0.5rem;
+}

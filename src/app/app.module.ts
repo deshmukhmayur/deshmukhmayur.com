@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import {
   MdcToolbarModule,
@@ -20,12 +22,13 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { UnderConstructionComponent } from './pages/under-construction/under-construction.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { environment } from '../environments/environment';
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'portfolio', component: UnderConstructionComponent,
+    path: 'portfolio', component: PortfolioComponent,
     data: { title: 'My Portfolio' }
   },
   {
@@ -56,6 +59,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     MdcToolbarModule,
     MdcListModule,
     MdcMenuModule,
