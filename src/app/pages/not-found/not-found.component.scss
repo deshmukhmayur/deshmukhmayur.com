@@ -7,5 +7,7 @@
     background-image: url('/assets/404.svg');
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-position: cover;
+    background-size: auto 60vh;
+
+    z-index: -1;
 }

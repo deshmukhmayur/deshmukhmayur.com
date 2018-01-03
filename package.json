@@ -5,7 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -H 0.0.0.0",
-    "build": "ng build --prod",
+    "build": "ng build --prod --base-href \"http:\/\/deshmukhmayur.com\"",
+    "postbuild": "echo \"deshmukhmayur.com\" > dist/CNAME",
+    "ship": "ngh",
+    "clean": "rm -rf dist/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
