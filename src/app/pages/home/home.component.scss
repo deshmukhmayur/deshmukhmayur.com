@@ -1,12 +1,48 @@
-@media screen and (max-width: 839px) {
-    .profile-img {
-        display: none;
+@media screen and (max-width: 479px) {
+    #welcome .greeting {
+        margin-top: 0;
+        margin-bottom: 2rem;
     }
 }
 
-@media screen and (max-width: 479px) {
-    #welcome .greeting {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+#welcome {
+    background-image: url(/assets/Avatar_transparent-bg.png);
+    background-repeat: no-repeat;
+    background-position: calc(100vw - 100%) center;
+    background-size: 40%;
+}
+.profile-avatar {
+    display: none;
+}
+
+@media screen and (max-width: 839px) {
+    #welcome {
+        background-image: none;
+
+        .greeting {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
     }
+
+    .profile-avatar {
+        display: block;
+
+        img {
+            width: 10rem;
+            height: auto;
+            box-shadow: 8px 12px 15px rgba(0,0,0,0.14);
+            border-radius: 50%;
+            background-color: #e8e8e8;
+        }
+    }
+}
+
+#about .mdc-list-item--activated {
+    color: initial;
+}
+
+.skills .mdc-list-item:nth-child(even) {
+    height: auto;
+    margin-bottom: 1rem;
 }

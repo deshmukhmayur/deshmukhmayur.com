@@ -1,13 +1,9 @@
 <section id="welcome" class="container mdc-layout-grid align-center">
   <div class="mdc-layout-grid__inner">
-    <div class="
-      mdc-layout-grid__cell
-      mdc-layout-grid__cell--span-3-desktop
-      mdc-layout-grid__cell--span-8-tablet
-      mdc-layout-grid__cell--align-middle
-      mdc-layout-grid__cell--order-2">
-      <mdc-icon [fontSize]="96">account_circle</mdc-icon>
+    <div class="profile-avatar mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+      <img src="/assets/Avatar_transparent-bg.png" alt="" srcset="">
     </div>
+
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9-desktop mdc-layout-grid__cell--span-8-tablet">
       <h2 class="mdc-typography--display4 greeting">Hello, World!</h2>
       <p class="mdc-typography--headline">I am
@@ -24,8 +20,7 @@
     <div class="mdc-layout-grid__cell
       mdc-layout-grid__cell--span-4-desktop
       mdc-layout-grid__cell--span-12-tablet
-      mdc-layout-grid__cell--align-middle
-      mdc-layout-grid">
+      mdc-layout-grid__cell--align-middle">
       <p class="mdc-typography--body1">
         I'm currently a student about to graduate in May 2018. I like creating simple and user-friendly interfaces for the web as
         well as mobile.
@@ -36,16 +31,14 @@
         <mdc-icon>file_download</mdc-icon>Resume</a>
     </div>
     <div class="mdc-layout-grid__cell
-      mdc-layout-grid__cell--span-4
-      mdc-layout-grid__cell--align-middle
-      mdc-layout-grid">
+      mdc-layout-grid__cell--span-4">
       <mdc-list-group>
         <div class="separator"></div>
         <mdc-list-group-subheader class="mdc-typography--headline">Education</mdc-list-group-subheader>
         <mdc-list [interactive]="false" [dense]="true" [lines]="2">
           <mdc-list-item>
             <mdc-list-item-text>
-              B.E. (Computer Science and Engineering)
+              B.E. (Computer Science &amp; Engg.)
               <mdc-list-item-secondary>DIEMS, Aurangabad (2014-2018)</mdc-list-item-secondary>
             </mdc-list-item-text>
           </mdc-list-item>
@@ -69,33 +62,36 @@
       </mdc-list-group>
     </div>
     <div class="mdc-layout-grid__cell
-      mdc-layout-grid__cell--span-4
-      mdc-layout-grid__cell--align-middle
-      mdc-layout-grid">
+      mdc-layout-grid__cell--span-4">
       <mdc-list-group>
         <div class="separator"></div>
         <mdc-list-group-subheader class="mdc-typography--headline">Skills</mdc-list-group-subheader>
-        <mdc-list [dense]="true" [interactive]="false">
+        <mdc-list [dense]="true" [interactive]="false" class="skills">
           <mdc-list-item class="mdc-typography--subheading1">
             UI &amp; UX Design
           </mdc-list-item>
           <mdc-list-item>
-            <mdc-linear-progress [secondary]="true"></mdc-linear-progress>
+            <mdc-linear-progress #uiProgress></mdc-linear-progress>
           </mdc-list-item>
           <mdc-list-item class="mdc-typography--subheading1">
             Front-end Web Design
           </mdc-list-item>
           <mdc-list-item>
-            <mdc-linear-progress [secondary]="true"></mdc-linear-progress>
+            <mdc-linear-progress #frontEndProgress></mdc-linear-progress>
           </mdc-list-item>
           <mdc-list-item class="mdc-typography--subheading1">
             Back-end Web Development
           </mdc-list-item>
           <mdc-list-item>
-            <mdc-linear-progress [secondary]="true"></mdc-linear-progress>
+            <mdc-linear-progress #backEndProgress></mdc-linear-progress>
           </mdc-list-item>
         </mdc-list>
+        <mdc-list-group-subheader class="mdc-typography--body2">Other Skills</mdc-list-group-subheader>
       </mdc-list-group>
+      <div class="other-skills">
+        <span class="chip">Graphic Design</span>
+        <span class="chip">3D Modeling</span>
+      </div>
     </div>
   </div>
 </section>
