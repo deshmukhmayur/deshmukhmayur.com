@@ -1,6 +1,19 @@
 <section id="portfolio" class="container mdc-layout-grid">
-  <h3 class="mdc-typography--display1 align-center">My Projects</h3>
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+      <span class="mdc-typography--display1">My Work</span>
 
+      <span class="pull-right">
+        <a mdc-button href="https://be.net/deshmukhmayur">
+          <mdc-icon fontSet="fa" fontIcon="fa-behance"></mdc-icon>
+        </a>
+        <a mdc-button href="https://deshmukhmayur.artstation.com">
+          <img src="/assets/icons/artstation.svg" style="height: 1rem; color: blue;">
+        </a>
+      </span>
+    </div>
+  </div>
+  <br>
   <div class="mdc-layout-grid__inner align-center" *ngIf="projects.length == 0 && !loadingError">
     <div class="mdc-layout-grid__cell--span-12">
       <span class="md-spinner" style="height: 2rem; width:2rem;"></span>
