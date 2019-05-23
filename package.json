@@ -1,11 +1,11 @@
 {
   "name": "deshmukhmayur.com",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve -H 0.0.0.0",
-    "build": "ng build --prod --base-href \"http://deshmukhmayur.com\"",
+    "build": "ng build --prod",
     "postbuild": "echo \"deshmukhmayur.com\" > dist/CNAME",
     "ship": "ngh",
     "clean": "rm -rf dist/",
@@ -38,6 +38,7 @@
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
+    "angular-cli-ghpages": "^0.5.3",
     "codelyzer": "^4.0.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
